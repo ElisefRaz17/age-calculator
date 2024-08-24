@@ -64,6 +64,27 @@ body {
   height: 1px;
   color: #DCDCDC;
 }
+#calculator-result{
+  font-family: var(--font-PoppinsItalic);
+  font-size: 50px;
+  display: inline-block;
+  padding: 30px;
+  padding-top: 0px;
+}
+#purple-value{
+  color: #854DFF;
+  font-style: italic;
+  font-weight: bold;
+}
+#result-text{
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+#result-multilines{
+  display: flex;
+  gap: 1rem;
+}
 
 @media (max-width: 768px) {
   #calculator-btn-divider{

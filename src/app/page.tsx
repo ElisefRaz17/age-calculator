@@ -89,7 +89,7 @@ export default function Home() {
           </Grid>
         </Grid>
         <div className="flex flex-row w-full" id="calculator-btn-divider">
-        {/* <div style={{ display: "inline-block" }}> */}
+          {/* <div style={{ display: "inline-block" }}> */}
           <div className="py-9 pl-9" id="divider-container">
             <hr id="calculator-divider" />
           </div>
@@ -98,7 +98,17 @@ export default function Home() {
           </div>
         </div>
         {/* </div> */}
-        <div id="calculator-result" aria-label="calculator result"></div>
+        <div id="calculator-result" aria-label="calculator result">
+          <span id="result-multilines">
+            <p id="purple-value">--</p> <p id="result-text">years</p>
+          </span>
+          <span id="result-multilines">
+            <p id="purple-value">--</p> <p id="result-text">months</p>
+          </span>
+          <span id="result-multilines">
+            <p id="purple-value">--</p> <p id="result-text">days</p>
+          </span>
+        </div>
       </div>
     </div>
   );

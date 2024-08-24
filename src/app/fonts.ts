@@ -11,3 +11,10 @@ export const PoppinsBold =  Poppins({
     display: 'auto',
     weight: "800"
 })
+
+export const PoppinsItalic =  Poppins({
+    subsets: ['latin'],
+    display: 'auto',
+    weight: "800",
+    style:'italic'
+})
