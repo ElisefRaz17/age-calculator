@@ -25,8 +25,8 @@ export default function Home() {
           aria-label="calculator fields"
           direction="row"
           alignItems="center"
-          spacing={1} /*className="flex flex-row gap-1 py-4"*/
-          >
+          // spacing={1} /*className="flex flex-row gap-1 py-4"*/
+        >
           <Grid item md>
             <p>DAY</p>
             <TextField
@@ -37,13 +37,13 @@ export default function Home() {
               placeholder="DD"
               required
               sx={{
-                input:{
-                  "&::placeholder":{
-                    fontWeight:"900",
-                    color:"#151515",
-                    lineHeight:'48px'
-                  }
-                }
+                input: {
+                  "&::placeholder": {
+                    fontWeight: "900",
+                    color: "#151515",
+                    lineHeight: "48px",
+                  },
+                },
               }}
             />
           </Grid>
@@ -57,13 +57,13 @@ export default function Home() {
               placeholder="MM"
               required
               sx={{
-                input:{
-                  "&::placeholder":{
-                    fontWeight:"900",
-                    color:"#151515",
-                    lineHeight:'48px'
-                  }
-                }
+                input: {
+                  "&::placeholder": {
+                    fontWeight: "900",
+                    color: "#151515",
+                    lineHeight: "48px",
+                  },
+                },
               }}
             />
           </Grid>
@@ -77,25 +77,27 @@ export default function Home() {
               placeholder="YYYY"
               required
               sx={{
-                input:{
-                  "&::placeholder":{
-                    fontWeight:"900",
-                    color:"#151515",
-                    lineHeight:'48px'
-                  }
-                }
+                input: {
+                  "&::placeholder": {
+                    fontWeight: "900",
+                    color: "#151515",
+                    lineHeight: "48px",
+                  },
+                },
               }}
             />
           </Grid>
         </Grid>
-        <div className="flex flex-row w-full">
-          <div className="py-9 pl-9">
-            <hr style={{ width: "470px", height: "1px", color: "#DCDCDC" }} />
+        <div className="flex flex-row w-full" id="calculator-btn-divider">
+        {/* <div style={{ display: "inline-block" }}> */}
+          <div className="py-9 pl-9" id="divider-container">
+            <hr id="calculator-divider" />
           </div>
           <div id="calculator-button" aria-label="calculator button">
             <Image src={ArrowIcon} alt="arrow image" width={70} height={70} />
           </div>
         </div>
+        {/* </div> */}
         <div id="calculator-result" aria-label="calculator result"></div>
       </div>
     </div>

@@ -59,3 +59,36 @@ body {
   padding-top: 15px;
   gap:0.8rem;
 }
+#calculator-divider{
+  width: 470px;
+  height: 1px;
+  color: #DCDCDC;
+}
+
+@media (max-width: 768px) {
+  #calculator-btn-divider{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  #calculator-button{
+    position: absolute;
+    z-index: 1;
+  }
+  #divider-container{
+    position: absolute;
+    z-index: 0;
+  }
+  #calculator-fields{
+    flex-wrap: nowrap;
+    width: 99%;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  #calculator-background{
+    width: 70%;
+  }
+  #calculator-divider{
+    width: 300px;
+  }
+}
