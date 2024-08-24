@@ -7,7 +7,22 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format('truetype');
 
+  font-family:"PoppinsBold";
+  src:url("/fonts/Poppins-Bold.ttf") format('truetype');
+
+  font-family: "PoppinsExtraBold";
+  src:url("/fonts/Poppins-ExtraBold.ttf") format('truetype');
+
+  font-family: "PoppinsExtraBoldItalic";
+  src:url("/fonts/Poppins-ExtraBoldItalic.ttf") format('truetype');
+
+  font-family: "PoppinsItalic";
+  src:url("/fonts/Poppins-Italic.ttf") format('truetype');
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,16 +33,29 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #F0F0F0;
+  /* font-family: var(--font-PoppinsRegular); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+#calculator-background{
+  height:450px;
+  width: 651px;
+  border-bottom-right-radius: 200px;
+}
+#calculator-fields{
+  color:#716F6F;
+  line-height: 21px;
+  font-size: 12px;
+  width: 70%;
+  font-family: var(--font-PoppinsBold) !important;
+  font-weight: 700;
+  letter-spacing:0.1rem;
+  padding-left: 35px;
+  padding-top: 15px;
+  gap:0.8rem;
 }
